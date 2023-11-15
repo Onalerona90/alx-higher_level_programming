@@ -1,7 +1,7 @@
 #!/usr/bin/node
-let narg = 0;
+let numberOfArguments = 0;
 
-exports.logMe = function (item) {
-  console.log(narg + ': ' + item);
-  narg++;
+module.exports.logMe = function (item) {
+  console.log(`${numberOfArguments}: ${item}`);
+  numberOfArguments++;
 };
